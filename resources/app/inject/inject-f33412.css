@@ -1,0 +1,29 @@
+/* site.css */
+
+/* header is draggable... */
+#titlebar{
+-webkit-app-region: drag;
+}
+
+/* but any buttons inside the header shouldn't be draggable */
+#titlebar svg {
+-webkit-app-region: no-drag;
+}
+
+#closebutton:hover {
+background-color: gray;
+stroke: black;
+transition: 0.1s;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
