@@ -1,0 +1,1 @@
+nativefier "https://www.fit.ba/student" --min-width 1280 --inject stylesheet.js --inject titlebar.css --name "FIT Desktop" --hide-window-frame --icon fit.ico --background-color "#161616" --disable-dev-tools

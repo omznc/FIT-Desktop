@@ -62,7 +62,7 @@ function setNotificationCallback(createCallback, clickCallback) {
     Object.defineProperty(newNotify, 'permission', {
         get: () => OldNotify.permission,
     });
-    // @ts-ignore
+    // @ts-expect-error TypeScript says its not compatible, but it works?
     window.Notification = newNotify;
 }
 function injectScripts() {
@@ -81,8 +81,8 @@ function injectScripts() {
             require(jsFile);
         }
     }
-    catch (error) {
-        log.error('Error encoutered injecting JS files', error);
+    catch (err) {
+        log.error('Error encoutered injecting JS files', err);
     }
 }
 function notifyNotificationCreate(title, opt) {
@@ -91,6 +91,7 @@ function notifyNotificationCreate(title, opt) {
 function notifyNotificationClick() {
     electron_1.ipcRenderer.send('notification-click');
 }
+// @ts-expect-error TypeScript thinks these are incompatible but they aren't
 setNotificationCallback(notifyNotificationCreate, notifyNotificationClick);
 electron_1.ipcRenderer.on('params', (event, message) => {
     log.debug('ipcRenderer.params', { event, message });
