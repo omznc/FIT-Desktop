@@ -8,14 +8,14 @@
 
 ## Why?
 
+ * Dark mode 🌙 
  * No need to open a browser, at least that you know of 🤫 
  * Install and uninstall support 💿 
  * Fancy icon on your Desktop, Start Menu, or Taskbar 🌟 
  * Be a cool kid 🕶 
  
 ## TO-DO
-
- * Dark mode 🌙 
+ * Fix the PDF Viewer 
  * Custom login page that actually remembers your credentials 😠 
 
 
