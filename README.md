@@ -1,3 +1,4 @@
+<center><img src="https://media.discordapp.net/attachments/846281854113415169/892080590118084628/unknown.png"></center>
 <img src="https://i.imgur.com/iz2xow6.png" style="display: flex; justify-content: center; align-items: center;"></img>
 
 # A Fully Functioning Electron App for [fit.ba/student](https://fit.ba/student).
